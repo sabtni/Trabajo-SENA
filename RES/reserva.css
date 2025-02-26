@@ -1,0 +1,97 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f4f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1, h2 {
+    color: #d4504c;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.mensaje {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background: #d4504c;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #a83b38;
+}
+
+.confirmacion {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background: #eaf8e0;
+    border-left: 5px solid #50b347;
+    color: #2d682d;
+    font-weight: bold;
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Historial de reservas */
+#historialReservas {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    text-align: left;
+}
+
+#historialReservas li {
+    background: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-left: 5px solid #d4504c;
+    border-radius: 5px;
+    font-size: 14px;
+}

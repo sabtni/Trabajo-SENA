@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - El Rincón del Gourmet</title>
+    <link rel="stylesheet" href="pagina principal.css">
+</head>
+<body>
+
+    <!-- Menú Superior -->
+    <div class="menu">
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <div id="menuContent" class="menu-content">
+            <ul>
+                <li><a href="#">Opción 1</a></li>
+                <li><a href="#">Opción 2</a></li>
+                <li><a href="#">Opción 3</a></li>
+            </ul>
+        </div>
+        <p class="direccion">Tv 42a # 4d-48</p>
+    </div>
+    
+    <script src="menu.js"></script>
+
+    <!-- Encabezado -->
+    <div class="header">
+        <p class="pregunta">¿Qué tienes pensado comer hoy?</p>
+        <img class="logo" src="RC/logo sena.jpeg" alt="El Rincón del Gourmet">
+    </div>
+
+    <!-- Sección Recetas Exclusivas -->
+    <div class="seccion">
+        <h2>Recetas Exclusivas</h2>
+        <div class="slider-container">
+            <div class="menu-lista">
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="RC/Natillas.jpg" alt="Natillas">
+                    <p>Natillas</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="RC/Espaguetis-GRANDE.jpg" alt="Salteado de espaguetis de calabacín con gambas">
+                    <p>Salteado de espaguetis de calabacín con gambas</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="RC/Risotto-GRANDE.jpg" alt="Risotto de berenjenas, jamón y habas">
+                    <p>Risotto de berenjenas, jamón y habas</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="RC/Bacalao-GRANDE.jpg" alt="Bacalao confitado con berberechos y alcachofas">
+                    <p>Bacalao confitado con berberechos y alcachofas</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="RC/Arroz con Verduras.jpg" alt="Arroz con Verduras">
+                    <p>Arroz con Verduras</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="RC/Rape-GRANDE.jpg" alt="Rape con ragout de verduras y manitas de cerdo">
+                    <p>Rape con ragout de verduras y manitas de cerdo</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="RC/Crema-de-coliflor-GRANDE.jpg" alt="Crema de coliflor">
+                    <p>Crema de coliflor</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="RC/Arroz-de-ibéricos-GRANDE.jpg" alt="Arroz de ibéricos al horno">
+                    <p>Arroz de ibéricos al horno</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="RC/Osobuco-a-la-Milanesa-GRANDE.jpg" alt="Ossobuco a la milanesa">
+                    <p>Ossobuco a la milanesa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Platos del Diario -->
+    <div class="seccion">
+        <h2 class="platos del diario">Platos del Diario</h2>
+        <div class="slider-container">
+            <div class="menu-lista">
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="PLD/boquerones-GRANDE.jpg" alt="Boquerones macerados">
+                    <p>Boquerones macerados</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="PLD/Pollo-en-pepitoria-GRANDE.jpg" alt="Pollo en pepitoria">
+                    <p>Pollo en pepitoria</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="PLD/Arroz-con-pollo-y-verduras_opt.jpg" alt="Arroz con pollo y verduras">
+                    <p>Arroz con pollo y verduras</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="PLD/Pastel-de-macarrones-gratinados_opt.jpg" alt="Pastel de macarrones gratinados">
+                    <p>Pastel de macarrones gratinados</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="PLD/gazpacho-de-fresas_grande.jpg" alt="Gazpacho de fresas">
+                    <p>Gazpacho de fresas</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="PLD/Estofado-de-carne-con-champiñones_opt.jpg" alt="Estofado de carne con champiñones">
+                    <p>Estofado de carne con champiñones</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="PLD/Verduras-a-la-parrilla-con-queso-de-cabra_opt.jpg" alt="Verduras asadas al horno">
+                    <p>Verduras asadas al horno</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="PLD/Habas-y-guisantes-con-ajetes_opt.jpg" alt="Habas con guisantes y ajetes">
+                    <p>Habas con guisantes y ajetes</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="PLD/Macarrones-con-salchichas-y-espinacas-GRANDE.jpg" alt="Macarrones con salchichas y espinacas">
+                    <p>Macarrones con salchichas y espinacas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- Sección De Sopas y Cremas -->
+      <div class="seccion">
+        <h2 class="platos del diario">Sopas y Cremas</h2>
+        <div class="slider-container">
+            <div class="menu-lista">
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="SC/Crema de almejas.webp" alt="Crema de Almejas">
+                    <p>Crema de Almejas</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="SC/Bisque.webp" alt="Bisque de Pimiento Rojo y Camarón" >
+                    <p>Bisque de Pimiento Rojo y Camarón</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="SC/Crema de poro.webp" alt="Crema de Poro con Pistache y Zanahoria">
+                    <p>Crema de Poro con Pistache y Zanahoria</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="SC/Maiz.webp" alt="Sopa de Maíz con Tocino y Cebollín FAGE">
+                    <p>Sopa de Maíz con Tocino y Cebollín FAGE</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="SC/Clam Chowder.webp" alt="Clam Chowder">
+                    <p>Clam Chowder</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="SC/Sopa-de-tomate-GRANDE.jpg" alt="Sopa de tomate y albahaca">
+                    <p>Sopa de tomate y albahaca</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="SC/cremadeaguacate_opt.jpg" alt="Crema de aguacate con berberechos">
+                    <p>Crema de aguacate con berberechos</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="SC/Crema-de-calabaza.jpg" alt="Crema de calabaza">
+                    <p>Crema de calabaza</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="SC/Sopa-castellana_opt.jpg" alt="Sopa castellana">
+                    <p>Sopa castellana</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Entradas -->
+    <div class="seccion">
+        <h2 class="para llevar">Entradas</h2>
+        <div class="slider-container">
+            <div class="menu-lista">
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="ENT/Quesadilla-GRANDE.jpg" alt="Quesadilla de jamón y dos quesos con pico de gallo">
+                    <p>Quesadilla de jamón y dos quesos con pico de gallo</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="ENT/tortilla-GRANDE.jpg" alt="Tortilla chips con guacamole">
+                    <p>Tortilla chips con guacamole</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="ENT/tosta-GRANDE.jpg" alt="Tosta de escalivada y salmón">
+                    <p>Tosta de escalivada y salmón</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="ENT/Brochetas-de-cerdo-GRANDE.jpg" alt="Brochetas de cerdo con cuscús">
+                    <p>Brochetas de cerdo con cuscús</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="ENT/Mejillones-GRANDE.jpg" alt="Mejillones con mojo">
+                    <p>Mejillones con mojo</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="ENT/Bolitas-de-espinacas-GRANDE.jpg" alt="Bolitas rellenas de espinacas">
+                    <p>Bolitas rellenas de espinacas</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="ENT/Berenjenas-rebozadas-grande.jpg" alt="Berenjenas rebozadas con jamón y queso">
+                    <p>Berenjenas rebozadas con jamón y queso</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="ENT/Brochetas-de-pollo-al-curry-con-higos-y-emulsión-de-mango_opt.jpg" alt="Brochetas de pollo al curry con higos y emulsión de mango">
+                    <p>Brochetas de pollo al curry con higos y emulsión de mango</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="ENT/wrap-salmon_destacado.jpg" alt="Wrap de salmón y tortilla">
+                    <p>Wrap de salmón y tortilla</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Para Llevar -->
+    <div class="seccion">
+        <h2 class="para llevar">Para Llevar</h2>
+        <div class="slider-container">
+            <div class="menu-lista">
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="PR/Sandwich-de-guacamole-GRANDE.jpg" alt="Sándwich de guacamole y bacalao ahumado">
+                    <p>Sándwich de guacamole y bacalao ahumado</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="PR/Pastel-de-verduras-GRANDE.jpg" alt="Pastel de verduras">
+                    <p>Pastel de verduras</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="PR/Pimientos-rellenos-de-carne-GRANDE.jpg" alt="Pimientos rellenos de carne">
+                    <p>Pimientos rellenos de carne</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="PR/Macarrones-con-verduras-salteadas.jpg" alt="Macarrones con verduras salteadas">
+                    <p>Macarrones con verduras salteadas</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="PR/Huevos-rellenos-de-ensaladilla-de-arroz.jpg" alt="Huevos rellenos de ensalada de arroz">
+                    <p>Huevos rellenos de ensalada de arroz</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="PR/Ensalada-de-garbanzos.jpg" alt="Ensalada de garbanzos y bacalao">
+                    <p>Ensalada de garbanzos y bacalao</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="PR/Ensalada de verduras asadas con atún.jpg" alt="Ensalada de verduras asadas con atún">
+                    <p>Ensalada de verduras asadas con atún</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="PR/Pollo-al-curry.jpg" alt="Pollo al curry">
+                    <p>Pollo al curry</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="PR/Empanadillas-de-higado-de-ternera-y-verduras.jpg" alt="Empanadillas de hígado de ternera y verduras">
+                    <p>Empanadillas de hígado de ternera y verduras</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Sección De Bebidas -->
+     <div class="seccion">
+        <h2 class="para llevar">Bebidas</h2>
+        <div class="slider-container">
+            <div class="menu-lista">
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="BEB/Jarra de clericot.webp" alt="Jarra de clericot">
+                    <p>Jarra de clericot</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="BEB/Latte de mazapán.webp" alt="Latte de mazapán">
+                    <p>Latte de mazapán</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="BEB/Conga.webp" alt="Conga">
+                    <p>Conga</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="BEB/Soda italiana.webp" alt="Soda italiana">
+                    <p>Soda italiana</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="BEB/Bellini de duraznos en almíbar.webp" alt="Bellini de duraznos en almíbar">
+                    <p>Bellini de duraznos en almíbar</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="BEB/Agua de sábila.webp" alt="Agua de sábila">
+                    <p>Agua de sábila</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="BEB/Coctel Alfonso XIII.webp" alt="Coctel Alfonso XIII">
+                    <p>Coctel Alfonso XIII</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="BEB/Grinch spritz.webp" alt="Grinch spritz">
+                    <p>Grinch spritz</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="BEB/Clericot blanco.webp" alt="Clericot blanco">
+                    <p>Clericot blanco</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Sección De Postres -->
+     <div class="seccion">
+        <h2 class="para llevar">Postres</h2>
+        <div class="slider-container">
+            <div class="menu-lista">
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="POS/pay de nuez.webp" alt="pay de nuez">
+                    <p>Pay de nuez</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="POS/Tamales de gelatina.webp" alt="Tamales de gelatina">
+                    <p>Tamales de gelatina</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="POS/Pionono.webp" alt="Pionono">
+                    <p>Pionono</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="POS/Mantecadas de pay de limón.webp" alt="Mantecadas de pay de limón">
+                    <p>Mantecadas de pay de limón</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="POS/Panqué de plátano con aceite de oliva.webp" alt="Panqué de plátano con aceite de oliva">
+                    <p>Panqué de plátano con aceite de oliva</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="POS/Pastel de crepas de chocolate.webp" alt="Pastel de crepas de chocolate">
+                    <p>Pastel de crepas de chocolate</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="POS/Pastel de calabaza en tacha.webp" alt="Pastel de calabaza en tacha">
+                    <p>Pastel de calabaza en tacha</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="POS/Gaznate.webp" alt="Gaznate">
+                    <p>Gaznate</p>
+                </div>
+                <div class="item" onclick="seleccionarItem(this)">
+                    <img src="POS/Piña Gelatina.webp" alt="Piña rellena de gelatina mosaico">
+                    <p>Piña rellena de gelatina mosaico</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="footer-container">
+        <!-- Mapa alineado a la izquierda -->
+        <div class="footer-map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31816.322255269315!2d-74.15894255712797!3d4.58679300481331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f992928b4cee9%3A0x539f03e456727685!2sCentro%20Comercial%20Centro%20Mayor!5e0!3m2!1ses-419!2sco!4v1739406961399!5m2!1ses-419!2sco" 
+                width="300" 
+                height="200" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <!-- Menú central -->
+        <div class="footer-menu">
+            <ul>
+                <li><a href="#">Experiencias</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Políticas de privacidad</a></li>
+                <li><a href="#">Legal</a></li>
+            </ul>
+        </div>
+
+        <!-- Redes sociales a la derecha -->
+        <div class="footer-social">
+            <p>Síguenos en:</p>
+            <a href="#"><img src="ICN/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="ICN/logotipo-de-twitter-sobre-fondo-negro.png" alt="Twitter"></a>
+            <a href="#"><img src="ICN/logotipo-de-instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="ICN/logotipo-de-linkedin.png" alt="Linkedin"></a>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

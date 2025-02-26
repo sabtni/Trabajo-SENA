@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="formulario.css">
+        <title>Formulario De Registro</title>
+    </head>
+    <body>
+        <section>
+            <h1>Formulario De Registro</h1>
+            <h3>Nombre</h3>
+            <input type="text" name="nombres" placeholder="Ingresa su Nombre" required>
+            <h3>Apellido</h3>
+            <input type="text" name="apellido" placeholder="Ingresa su Apellido" required>
+            <h3>Numero De Documento</h3>
+            <input type="text" name="documento" placeholder="Ingresa tu Numero de Documento" required>
+            <h3>Fecha de Nacimiento</h3>
+            <input type="date" name="fecha_nacimiento" required>
+            <h3>Numero De Celular</h3>
+            <input type="tel" name="celular" placeholder="Ingresa su Numero de Celular" required>
+            <h3>Direccion</h3>
+            <input type="text" name="direccion" placeholder="Ingresa tu Direccion" required>
+            <h3>Correo Electronico</h3>
+            <input type="email" name="correo" placeholder="Ingresa tu Correo Electronico" required>
+            <h3>Confirmacion de Correo Electronico</h3>
+            <input type="email" name="correo_confirmacion" placeholder="Ingresa tu Correo Electronico" required>
+            <h3>Crea tu Contraseña</h3>
+            <input type="password" name="contraseña" placeholder="Ingresa tu Contraseña" required>
+            <h3>Confirmacion de Contraseña</h3>
+            <input type="password" id="confirmacion_contraseña" name="confirmacion_contraseña" placeholder="Confirma tu Contraseña" required>
+            <p id="error-contraseña" style="color:red; display:none;">Las contraseñas no coinciden</p>
+            <p id="error-menor" style="color:red; display:none;">Debes tener al menos 18 años para registrarte.</p>
+        </section>
+        <div class="registrate">
+            <a href="gorumet Inicio sesion.html">Registrate</a>
+        </div>
+    
+    </body>
+</html>

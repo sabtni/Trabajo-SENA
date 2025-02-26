@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1, h2 {
+    color: #d4504c;
+}
+
+.descripcion {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.evento {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.evento h3 {
+    color: #d4504c;
+}
+
+.evento p {
+    color: #333;
+}
+
+.boton-reservar {
+    background: #d4504c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.boton-reservar:hover {
+    background: #b53838;
+}
+
+#historial-reservas {
+    list-style: none;
+    padding: 0;
+}
+
+#historial-reservas li {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
