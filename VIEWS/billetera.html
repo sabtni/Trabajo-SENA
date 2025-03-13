@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Billetera - El Rincón del Gourmet</title>
+    <link rel="stylesheet" href="billetera.css">
+</head>
+<body>
+
+    <div class="wallet-container">
+        <h1>Mi Billetera</h1>
+        <p class="descripcion">Administra tu saldo, pagos y tarjetas en un solo lugar.</p>
+
+        <div class="saldo">
+            <h2>Saldo disponible</h2>
+            <p id="saldo-total">$0.00</p>
+            <button onclick="recargarSaldo()">Recargar Saldo</button>
+        </div>
+
+        <div class="seccion">
+            <h2>Historial de Recargas y Pagos</h2>
+            <ul id="historial-transacciones"></ul>
+        </div>
+
+        <div class="seccion">
+            <h2>Tarjetas Registradas</h2>
+            <ul id="lista-tarjetas"></ul>
+            <button onclick="mostrarFormularioTarjeta()">Agregar Tarjeta</button>
+        </div>
+
+        <div id="formulario-tarjeta" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarFormularioTarjeta()">&times;</span>
+                <h2>Registrar Tarjeta</h2>
+                <label for="tipo-tarjeta">Tipo de Tarjeta</label>
+                <select id="tipo-tarjeta">
+                    <option value="Visa">Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                </select>
+
+                <label for="numero-tarjeta">Número de Tarjeta</label>
+                <input type="text" id="numero-tarjeta" placeholder="**** **** **** ****" maxlength="19">
+
+                <label for="nombre-tarjeta">Titular de la Tarjeta</label>
+                <input type="text" id="nombre-tarjeta" placeholder="Nombre en la tarjeta">
+
+                <button onclick="registrarTarjeta()">Guardar Tarjeta</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="billetera.js"></script>
+
+</body>
+</html>

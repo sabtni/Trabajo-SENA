@@ -1,0 +1,108 @@
+body {
+    background-color: #f3f4f6;
+    padding: 1.5rem;
+}
+
+.container {
+    max-width: 64rem;
+    margin: 0 auto;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 1.875rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #f97316;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #374151;
+}
+
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.menu-buttons button {
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.menu-buttons .orange {
+    background-color: #f97316;
+    color: white;
+}
+
+.menu-buttons .orange:hover {
+    background-color: #ea580c;
+}
+
+.menu-buttons .red {
+    background-color: #ef4444;
+    color: white;
+}
+
+.menu-buttons .red:hover {
+    background-color: #dc2626;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.footer-buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-buttons button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.footer-buttons .cart {
+    background-color: #f97316;
+    color: white;
+}
+
+.footer-buttons .cart:hover {
+    background-color: #ea580c;
+}
+
+.footer-buttons .checkout {
+    background-color: #10b981;
+    color: white;
+}
+
+.footer-buttons .checkout:hover {
+    background-color: #059669;
+}

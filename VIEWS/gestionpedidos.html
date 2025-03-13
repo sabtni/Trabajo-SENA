@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos - Rincon Gourmet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="gestion.css">
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-3xl font-extrabold text-center mb-6 text-orange-500">🍽️ Menú</h1>
+        <h2>Delicias a un clic de distancia. Haz tu pedido y disfruta de la mejor experiencia gourmet.</h2>
+        <div class="flex justify-center gap-4 mb-6">
+            <button onclick="cargarMenu('Exclusivas')" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg font-bold shadow-md"> Recetas Exclusivas</button>
+            <button onclick="cargarMenu('Diario')" class="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg font-bold shadow-md"> Platos del Diario</button>
+            <button onclick="cargarMenu('Exclusivas')" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg font-bold shadow-md"> Sopas y Cremas </button>
+            <button onclick="cargarMenu('Diario')" class="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg font-bold shadow-md"> Entradas</button>
+            <button onclick="cargarMenu('Exclusivas')" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg font-bold shadow-md"> Bebidas</button>
+            <button onclick="cargarMenu('Diario')" class="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg font-bold shadow-md"> Postres</button>
+        </div>
+        <div id="menu" class="grid grid-cols-2 gap-6"></div>
+    </div>
+
+    <div class="fixed bottom-0 left-0 w-full bg-white p-4 shadow-lg flex justify-between items-center">
+        <button onclick="verCarrito()" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg text-lg font-bold shadow-md transition">🛒 Ver Pedido (<span id="cantidad-total">0</span>)</button>
+        <button onclick="irAPago()" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg text-lg font-bold shadow-md transition">✅ Finalizar Pedido</button>
+    </div>
+
+    <script src="gestion.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+h1 {
+    color: #d4504c;
+}
+
+p {
+    color: #555;
+}
+
+.botones {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.cancelar {
+    background: #ccc;
+    color: #333;
+}
+
+.cancelar:hover {
+    background: #bbb;
+}
+
+.confirmar {
+    background: #d4504c;
+    color: white;
+}
+
+.confirmar:hover {
+    background: #b53838;
+}
+
+#mensaje-despedida {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    display: none;
+}
+
+h2 {
+    color: #d4504c;
+}
+
+.volver {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #d4504c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.volver:hover {
+    background: #b53838;
+}
+
+.oculto {
+    display: none;
+}

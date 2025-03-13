@@ -1,0 +1,128 @@
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #d4504c;
+}
+
+h1 {
+    color: #d32f2f;
+    margin-bottom: 30px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.menu-item {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menu-content {
+    flex: 1;
+}
+
+.menu-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.menu-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.menu-price {
+    font-weight: bold;
+    color: #d32f2f;
+    font-size: 1.1em;
+}
+
+.discount {
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    display: inline-block;
+    margin-right: 8px;
+}
+.titulo-seccion {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.titulo-seccion img {
+    width: 300px; /* o el ancho que prefieras */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.titulo-seccion h1 {
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.menu-button {
+    display: inline-block; /* Permite que el botón se comporte como un bloque */
+    background: #ff5722;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    margin-top: 10px; /* Espacio entre el título y el botón */
+}
+
+.menu-button:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+}
+
+
+
